@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+   >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:alpha="0.2"
+        android:src="@drawable/bgfinal"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/facebooksignin"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebooksignin"
+        android:layout_width="296dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/emailtextView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/nametextView"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/nametextView"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:background="@drawable/gsigninbtn"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/emailtextView"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/nametextView"
+        android:layout_centerInParent="true"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:background="@drawable/gsigninbtn"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        android:gravity="center" />
+
+
+</RelativeLayout>

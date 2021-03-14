@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".start"
+    >
+
+
+    <ImageView
+        android:id="@+id/bgimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:scaleType="center" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/googleicon"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        android:layout_marginTop="10dp"
+        app:lottie_rawRes="@raw/googleicon" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/facebookicon2"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/googleicon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/facebookicon" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loding"
+        app:lottie_rawRes="@raw/loding"
+        app:lottie_autoPlay="true"
+        android:layout_below="@+id/facebookicon2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-10dp"
+        />
+
+    <TextView
+        android:id="@+id/socialtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="250dp"
+        android:fontFamily="@font/bangers"
+        android:text="Social"
+        android:layout_centerInParent="true"
+        android:textColor="#F4C533"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/mediatv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="187dp"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/bangers"
+        android:text="Media"
+        android:textColor="#F4C533"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/integrationtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/bangers"
+        android:text="Integration"
+        android:textColor="#F4C533"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>
